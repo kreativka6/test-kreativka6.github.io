@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style33.css" />
+    <title>Flip cards</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="beer.png" alt="" srcset="" /></div>
+          <div class="back">Anka</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="donuts.png" alt="" srcset="" /></div>
+          <div class="back">Ivka M.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="macrons.png" alt="" srcset="" /></div>
+          <div class="back">Netka</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="burger.png" alt="" srcset="" /></div>
+          <div class="back">Miro</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="fries.png" alt="" srcset="" /></div>
+          <div class="back">Maťa</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="pancakes.png" alt="" srcset="" /></div>
+          <div class="back">Dianka</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="ice.png" alt="" srcset="" /></div>
+          <div class="back">Maťka K.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="burrito.png" alt="" srcset="" /></div>
+          <div class="back">Pali</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="popcorn.png" alt="" srcset="" /></div>
+          <div class="back">Erika</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="nuggets.png" alt="" srcset="" /></div>
+          <div class="back">Katka</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="chips.png" alt="" srcset="" /></div>
+          <div class="back">Ivka B.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="pizza.png" alt="" srcset="" /></div>
+          <div class="back">Miki</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="egg.png" alt="" srcset="" /></div>
+          <div class="back">Veronika</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="front"><img src="shake.png" alt="" srcset="" /></div>
+          <div class="back">Agatka</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let cards = document.querySelectorAll(".content");
+      let fronts = document.querySelectorAll(".front");
+      let backs = document.querySelectorAll(".back");
+      cards.forEach((card) => {
+        card.addEventListener("click", () => {
+          card.style.transform = "rotateY(180deg)";
+          card.style.transition = "transform 0.5s";
+        });
+      });
+    </script>
+  </body>
+</html>
